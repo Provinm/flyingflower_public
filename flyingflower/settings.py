@@ -22,8 +22,7 @@ REDIS_PORT = int(os.environ.get("REDIS_PORT"))
 
 # 包含的令词
 # SELECTED_WORDS = '春江花月夜 风雨雷电雪 日月星石 春夏秋冬 梅兰竹菊 金木水火土'
-# SELECTED_WORDS = '花春月风夜 人山云酒新 年绿水松青 书香归心平 思家'
-SELECTED_WORDS = "一万"
+SELECTED_WORDS = '花春月风夜 人山云酒新 年绿水松青 书香归心平 思家'
 
 # 日志设置
 EBROSE_LOGGER_CONFIG = {
