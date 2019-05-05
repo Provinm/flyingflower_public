@@ -56,7 +56,6 @@ def check_token(coro):
             )
 
         user_cache = await get_user_cache(token)
-        _Logger.info(f"get user_cache = {user_cache}")
         if not user_cache:
             return response.json(
                 {

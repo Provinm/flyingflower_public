@@ -25,7 +25,6 @@ async def redis_set(key, value, expire=24*60*60):
     if not cache:
         cache = await connect()
 
-    _Logger.info(f"redis conn = {cache}")
     value = pack(value)
 
     try:

@@ -42,7 +42,6 @@ async def asr_view(request, user_cache):
     processed_id = user_cache["processed"]
 
     audio_bytes = request.files.get("file")
-    _Logger.info(f"get audio_bytes = {audio_bytes}")
     if not audio_bytes:
         _Logger.debug("empty audio bytes")
         return response.json(

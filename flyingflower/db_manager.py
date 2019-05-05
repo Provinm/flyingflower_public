@@ -41,14 +41,13 @@ async def execute(statement):
         finally:
             await cur.close()
 
-        return cur.fetchone()
+        return await cur.fetchone()
 
 
 async def get_sentence_by_text(sentence_txt):
     sql = "select id, poetry_id, text from sentence where locate({0}, text)>0 limit 1;".format(
         repr(sentence_txt))
     result = await execute(sql)
-    _Logger.debug(f"get_sentence_by_text result = {result}")
     return result
 
 
