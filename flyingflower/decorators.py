@@ -12,6 +12,7 @@ from .settings import SELECTED_WORDS
 CHINESE_RE_PAT = re.compile(r"[\u4e00-\u9fa5]")
 _Logger = logging.getLogger()
 
+
 def set_token(coro):
     @wraps(coro)
     async def wrapper(request, *args, **kw):
@@ -41,6 +42,7 @@ def set_token(coro):
         await set_user_cache(new_token, user_cache)
         return await coro(request, user_cache)
     return wrapper
+
 
 def check_token(coro):
     @wraps(coro)
