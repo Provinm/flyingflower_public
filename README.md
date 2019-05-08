@@ -46,7 +46,10 @@ docker run -d -p 8000:8000 \
 
 容器运行之后使用 `docker exec -it flyingflower bash`　进入容器中。
 
-进入 `server/preparation` 文件夹中
+
+1、加载 .env 到环境变量，命令 `source .env`
+2、进入 `server/preparation` 文件夹中
+
 
 1. 运行 `python db_create.py ` 建立数据库表
 2. 运行  `python db_import.py` 导入数据
