@@ -73,5 +73,5 @@ docker run -d -p 8000:8000 \
 
 这时候打开浏览器或者 wget 命令访问 `http://localhost:8000/ebrose/pivot?povit=花` 应该可以看到结果。
 
-接下来为了搭起一个完整的应用，参考飞花令的[小程序代码]()，clone 下来，使用小程序开发工具打开，更改 app.json 中的 host，即可在手机上扫码体验啦。
+接下来为了搭起一个完整的应用，参考飞花令的[小程序代码](https://github.com/Provinm/flyingflower_public_frontend)，clone 下来，使用小程序开发工具打开，更改 app.json 中的 host，即可在手机上扫码体验啦。
 
