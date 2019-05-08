@@ -48,6 +48,7 @@ docker run -d -p 8000:8000 \
 
 
 1、加载 .env 到环境变量，命令 `source .env`
+
 2、进入 `server/preparation` 文件夹中
 
 
